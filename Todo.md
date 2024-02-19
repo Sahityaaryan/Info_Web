@@ -31,5 +31,5 @@ phd candidates
 ### Contact [Ashuthosh sir]
 
 ## Other task (me)
-- Adding home route
-- change of "Hire me" with About Me
+- Adding home route [done]
+- change of "Hire me" with About Me [done]
