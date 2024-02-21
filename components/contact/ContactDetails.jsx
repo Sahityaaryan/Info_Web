@@ -24,7 +24,7 @@ function ContactDetails() {
 			<div className="text-left max-w-xl px-6">
 				<h2 className="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8">
 					Contact details
-				</h2>
+				</h2>About Me
 				<ul>
 					{contacts.map((contact) => (
 						<li className="flex " key={contact.id}>

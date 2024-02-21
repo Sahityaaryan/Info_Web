@@ -13,9 +13,8 @@ phd candidates
 
 ### Home page: 
 
-- Conferences [hidden route]
-- Journals [hidden route]
-
+- Conferences [hidden route] [done]
+- Journals [hidden route] [done]
 
 
 ### Contact 
@@ -31,5 +30,5 @@ phd candidates
 ### Contact [Ashuthosh sir]
 
 ## Other task (me)
-- Adding home route
-- change of "Hire me" with About Me
+- Adding home route [done]
+- change of "Hire me" with About Me [done]
