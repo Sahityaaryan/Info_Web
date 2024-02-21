@@ -13,9 +13,8 @@ phd candidates
 
 ### Home page: 
 
-- Conferences [hidden route]
-- Journals [hidden route]
-
+- Conferences [hidden route] [done]
+- Journals [hidden route] [done]
 
 
 ### Contact 

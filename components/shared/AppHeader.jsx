@@ -3,14 +3,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
-import HireMeModal from '../HireMeModal';
-import logoLight from '../../public/images/logo-light.svg';
-import logoDark from '../../public/images/logo-dark.svg';
+// import HireMeModal from '../HireMeModal';
+// import logoLight from '../../public/images/favicon.ico';
+import logoDark from '../../public/icon.svg';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 
 function AppHeader() {
 	const [showMenu, setShowMenu] = useState(false);
-	const [showModal, setShowModal] = useState(false);
+	// const [showModal, setShowModal] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
 
 	function toggleMenu() {
@@ -21,25 +21,25 @@ function AppHeader() {
 		}
 	}
 
-	function showHireMeModal() {
-		if (!showModal) {
-			document
-				.getElementsByTagName('html')[0]
-				.classList.add('overflow-y-hidden');
-			setShowModal(true);
-		} else {
-			document
-				.getElementsByTagName('html')[0]
-				.classList.remove('overflow-y-hidden');
-			setShowModal(false);
-		}
-	}
+	// function showHireMeModal() {
+	// 	if (!showModal) {
+	// 		document
+	// 			.getElementsByTagName('html')[0]
+	// 			.classList.add('overflow-y-hidden');
+	// 		setShowModal(true);
+	// 	} else {
+	// 		document
+	// 			.getElementsByTagName('html')[0]
+	// 			.classList.remove('overflow-y-hidden');
+	// 		setShowModal(false);
+	// 	}
+	// }
 
 	return (
 		<motion.nav
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
-			id="nav"
+			id="nav"	
 			className="sm:container sm:mx-auto"
 		>
 			{/* Header */}
@@ -54,17 +54,19 @@ function AppHeader() {
 									className="w-36 cursor-pointer"
 									alt="Dark Logo"
 									width={150}
-									height={120}
+									height={60}
 								/>
+								
 							) : (
 								<Image
-									src={logoLight}
+									src={logoDark}
 									className="w-36 cursor-pointer"
 									alt="Dark Logo"
 									width={150}
-									height={120}
+									height={60}
 								/>
 							)}
+							
 						</Link>
 					</div>
 
@@ -134,7 +136,7 @@ function AppHeader() {
 					</div>
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<button
-							onClick={showHireMeModal}
+							// onClick={showHireMeModal}
 							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
 							aria-label="Hire Me Button"
 						>
@@ -198,7 +200,7 @@ function AppHeader() {
 					</div>
 				</div>
 			</div>
-			<div>
+			{/* <div>
 				{showModal ? (
 					<HireMeModal
 						onClose={showHireMeModal}
@@ -206,7 +208,7 @@ function AppHeader() {
 					/>
 				) : null}
 				{showModal ? showHireMeModal : null}
-			</div>
+			</div> */}
 		</motion.nav>
 	);
 }
