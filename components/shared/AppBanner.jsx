@@ -36,7 +36,19 @@ function AppBanner() {
 					}}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					Assistant Proffessor under the Department of Mechanical Engineering
+					Assistant Proffessor & TPO  (NIT Patna)
+				</motion.p>
+				<motion.p
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{
+						ease: 'easeInOut',
+						duration: 0.9,
+						delay: 0.2,
+					}}
+					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+				>
+					President Avhikalpana (NGO)
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}
