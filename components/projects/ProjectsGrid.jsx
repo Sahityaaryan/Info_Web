@@ -2,25 +2,26 @@ import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
 import { projectsData } from '../../data/projectsData';
+import { projectData } from '../../data/projectsData';
 import ProjectsFilter from './ProjectsFilter';
 
 function ProjectsGrid() {
-	const [searchProject, setSearchProject] = useState();
+	const [searchProject, setSearchProject] = useState("");
 	const [selectProject, setSelectProject] = useState();
 
 	// @todo - To be fixed
-	// const searchProjectsByTitle = projectsData.filter((item) => {
-	// 	const result = item.title
-	// 		.toLowerCase()
-	// 		.includes(searchProject.toLowerCase())
-	// 		? item
-	// 		: searchProject == ''
-	// 		? item
-	// 		: '';
-	// 	return result;
-	// });
+	const searchProjectsByTitle = projectData.filter((item) => {
+		const result = item.title
+			.toLowerCase()
+			.includes(searchProject.toLowerCase())
+			? item
+			: searchProject == ''
+			? item
+			: '';
+		return result;
+	});
 
-	const selectProjectsByCategory = projectsData.filter((item) => {
+	const selectProjectsByCategory = projectData.filter((item) => {
 		let category =
 			item.category.charAt(0).toUpperCase() + item.category.slice(1);
 		return category.includes(selectProject);
@@ -107,13 +108,22 @@ function ProjectsGrid() {
 			</div>
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-5">
-				{selectProject
+				{searchProject?searchProjectsByTitle.map((project,index)=>{
+							return <ProjectSingle key={index} {...project}/>
+						}): selectProject
 					? selectProjectsByCategory.map((project, index) => {
 							return <ProjectSingle key={index} {...project} />;
 					  })
-					: projectsData.map((project, index) => (
+					: projectData.map((project, index) => (
 							<ProjectSingle key={index} {...project} />
 					  ))}
+					  {/* {
+						searchProject?searchProjectsByTitle.map((project,index)=>{
+							return <ProjectSingle key={index} {...project}/>
+						}):projectsData.map((project, index) => (
+							<ProjectSingle key={index} {...project} />
+					  ))
+					  } */}
 			</div>
 		</section>
 	);

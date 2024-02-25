@@ -6,23 +6,23 @@ const RelatedProject = {
 	Projects: [
 		{
 			id: uuidv4(),
-			title: 'Mobile UI',
-			img: '/images/ui-project-2.jpg',
+			title: 'Self Project',
+			img: '/images/Self/plasma.jpg',
 		},
 		{
 			id: uuidv4(),
-			title: 'Web Application',
-			img: '/images/mobile-project-1.jpg',
+			title: 'Self Project',
+			img: '/images/Self/graphene1.jpg',
 		},
 		{
 			id: uuidv4(),
-			title: 'UI Design',
-			img: '/images/web-project-1.jpg',
+			title: 'Phd',
+			img: '/images/Phd/plasma.jpg',
 		},
 		{
 			id: uuidv4(),
-			title: 'Kabul Mobile App UI',
-			img: '/images/mobile-project-2.jpg',
+			title: 'phd ',
+			img: '/images/Phd/plasma2.jpg',
 		},
 	],
 };
