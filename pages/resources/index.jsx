@@ -6,7 +6,7 @@ import { certificates } from "../../data/certificates"
 import ShowDataPoints from "../../components/showDataPoints/ShowDataPoints"
 export default function Resources(){
 
-    console.log("certificates: ",certificates)
+    // console.log("certificates: ",certificates)
     return(
         <>
 

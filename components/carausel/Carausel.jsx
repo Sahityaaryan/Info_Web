@@ -39,7 +39,7 @@ export default function Carousel({ src }) {
             >
                 {source.map(function (imgSrc) {
 
-                    console.log("product of each img_url: ", imgSrc)
+                    // console.log("product of each img_url: ", imgSrc)
                     return (
                         <>
                             <SwiperSlide 
