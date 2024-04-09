@@ -17,7 +17,7 @@ export default function Carousel({ src }) {
 
     const [source, setSources] = useState(src);
 
-    console.log("source: ",source);
+    // console.log("source: ",source);
 
     
     return (

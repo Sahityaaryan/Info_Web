@@ -32,3 +32,11 @@ phd candidates
 ## Other task (me)
 - Adding home route [done]
 - change of "Hire me" with About Me [done]
+
+
+
+## Sponsors (section)
+
+- logic that how to know that the work is completed or not.
+
+- how to use filter in ag-grid-react

@@ -120,6 +120,11 @@ function AppHeader() {
 						</Link>
 					</div>
 					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
+						<Link href="/sponsors" aria-label="Sponsors">
+							Sponsors
+						</Link>
+					</div>
+					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
 						<Link href="/projects" aria-label="Projects">
 							Projects
 						</Link>
@@ -134,6 +139,7 @@ function AppHeader() {
 							Contact
 						</Link>
 					</div>
+					
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<button
 							// onClick={showHireMeModal}
@@ -158,6 +164,13 @@ function AppHeader() {
 						aria-label="Projects"
 					>
 						<Link href="/projects">Projects</Link>
+					</div>
+
+					<div
+						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Sponsors"
+					>
+						<Link href="/sponsors">Sponsors</Link>
 					</div>
 					{/* <div
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
