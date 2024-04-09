@@ -17,8 +17,6 @@ export default function Sponsors() {
         'alignItems': 'center',
         'justifyContent': 'center',
         'padding': '1rem',
-        // backgroundColor:'red'
-        // paddingTop:'1rem'
     }
 
     // const getRowStyle = params => {
@@ -35,13 +33,8 @@ export default function Sponsors() {
 
     const autoSizeStrategy = {
         type: 'fitGridWidth',
-        // defaultMinWidth: 100,
-        columnLimits: [
-            {
-                colId: 'country',
-                minWidth: 900
-            }
-        ]
+       
+
     };
 
     return (
@@ -63,17 +56,16 @@ export default function Sponsors() {
             <div>
 
                 <div
-                    className="ag-theme-quartz, w-[69.3rem] mx-auto border-4 rounded-2xl" // applying the grid theme
-                    style={{ height: 300, }} // the grid will fill the size of the parent container
+                    className="ag-theme-quartz, w-[90vw] md-[99vw] xl:w-[78rem] mx-auto border-4 rounded-2xl h-[43rem]" // applying the grid theme
+                     // the grid will fill the size of the parent container
                 >   
                     <AgGridReact
                         autoSizeStrategy={autoSizeStrategy}
                         rowData={rowData}
                         columnDefs={columnData}
                         domLayout='normal'
-                        rowHeight={60}
+                        rowHeight={80}
                         rowStyle={RowStyle}
-                        // getRowStyle={getRowStyle}
                         getRowHeight={getRowHeight}
                         rowSelection='multiple'
                         headerClass="my-header-class"

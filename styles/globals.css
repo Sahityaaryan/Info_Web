@@ -246,3 +246,7 @@ a {
 	}
 }
 
+.my-header-class{
+	background-color: #adb5bd;
+	font-weight: bold;
+}
