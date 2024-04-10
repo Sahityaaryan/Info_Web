@@ -245,3 +245,8 @@ a {
 		opacity: 0.5;
 	}
 }
+
+.my-header-class{
+	background-color: #adb5bd;
+	font-weight: bold;
+}

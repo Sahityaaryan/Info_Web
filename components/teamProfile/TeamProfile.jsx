@@ -30,16 +30,16 @@ export default function TeamProfile({ data }) {
 
                     <div className=" w-[1/2] h-auto  py-[2rem] lg:py-0 lg:w-[64%] flex justify-center flex-col px-4 lg:px-12 text-left">
 
-                        <p className=" font-semibold text-[1.4rem] sm:text-[1.6rem] lg:text-[1.3rem]">
+                        <p className="text-ternary-dark dark:text-ternary-light font-semibold text-[1.4rem] sm:text-[1.6rem] lg:text-[1.3rem]">
                             {data.name}
                         </p>
-                        <p className="font-medium text-lg sm:text-xl ">Research Interests: </p>
-                        <p className="pb-1 lg:pb-3 font-normal">{data.researchInterest}</p>
+                        <p className=" text-ternary-dark dark:text-ternary-light font-medium text-lg sm:text-xl ">Research Interests: </p>
+                        <p className=" text-ternary-dark dark:text-ternary-light pb-1 lg:pb-3 font-normal">{data.researchInterest}</p>
                         {/* <p className="pt-3 font-medium "> Google Scholar: <span className="font-normal" >{"https://scholar.google.co.in/citations?user=NquFNIsAAAAJ&hl=en"}</span></p> */}
-                        <p className="font-medium "> Google Scholar: <span className="font-normal" >{data.googleScholar}</span></p>
-                        <p className="font-medium "> Email: <span className="font-normal" >{data.email}</span></p>
-                        <p className="font-medium">office: <span className="font-normal" >{data.office}</span></p>
-                        <p className="font-medium">Research Areas: <span className="font-normal" >{"Associate Editor, MAPAN (Journal of Metrology Society of India, SCI, Impact factor: 1.0 (2022) Tribology, Coating, Wear, Friction, Surface Modification, Industry 4.0/5.0 Associate Editor, MAPAN (Journal of Metrology Society of India, SCI, Impact factor: 1.0 (2022)"}</span></p>
+                        <p className=" text-ternary-dark dark:text-ternary-light font-medium "> Google Scholar: <span className="font-normal" >{data.googleScholar}</span></p>
+                        <p className=" text-ternary-dark dark:text-ternary-light font-medium "> Email: <span className="font-normal" >{data.email}</span></p>
+                        <p className=" text-ternary-dark dark:text-ternary-light font-medium">office: <span className="font-normal" >{data.office}</span></p>
+                        <p className=" text-ternary-dark dark:text-ternary-light font-medium">Research Areas: <span className="font-normal" >{"Associate Editor, MAPAN (Journal of Metrology Society of India, SCI, Impact factor: 1.0 (2022) Tribology, Coating, Wear, Friction, Surface Modification, Industry 4.0/5.0 Associate Editor, MAPAN (Journal of Metrology Society of India, SCI, Impact factor: 1.0 (2022)"}</span></p>
 
                     </div>
                 </section>
