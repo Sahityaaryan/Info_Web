@@ -22,7 +22,7 @@ export default function Journals(showMoreJournals){
 			{showMoreJournals && (
 				<>
 				<div className="mt-10 sm:mt-15 flex justify-center">
-				<div className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300">
+				<div className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-red-800 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300">
 					<Link href="/journals" aria-label="More Journals" passHref>
 						<Button title="More Journals" />
 					</Link>

@@ -61,7 +61,7 @@ function ContactForm() {
 					</div>
 
 					<div className="mt-6">
-						<span className="font-general-medium  px-7 py-4 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
+						<span className="font-general-medium  px-7 py-4 text-white text-center font-medium tracking-wider bg-red-800 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
 							<Button
 								title="Send Message"
 								type="submit"

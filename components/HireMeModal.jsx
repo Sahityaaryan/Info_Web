@@ -105,7 +105,7 @@ function HireMeModal({ onClose, onRequest }) {
 											py-2
 											sm:py-2.5
 											text-white
-											bg-indigo-500
+											bg-red-800
 											hover:bg-indigo-600
 											rounded-md
 											focus:ring-1 focus:ring-indigo-900 duration-500"

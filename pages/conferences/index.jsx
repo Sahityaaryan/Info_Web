@@ -39,7 +39,7 @@ export default function Conferences(){
 // 							return (
 // 								<div key={conference.id} className=" flex justify-center">
 // 								<div
-// 								className="font-general-medium flex justify-start p-4 items-center w-[70%] mt-8 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
+// 								className="font-general-medium flex justify-start p-4 items-center w-[70%] mt-8 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-red-800 text-gray-500 hover:text-white duration-500"
 // 							>
 // 								<div className="flex ">
 // 								<span className="mx-2">{conference.id}.</span>

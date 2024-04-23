@@ -1,0 +1,43 @@
+/* styles/AnnouncementCarousel.module.css */
+.carousel-container {
+    width: 100%; /* Ensure the container takes up the full width */
+  }
+  
+  .carousel {
+    display: flex;
+    width: 100%; /* Take up the full width of the container */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+  }
+  
+  .announcement {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+    scroll-snap-align: start;
+  }
+  
+  .imageContainer {
+    height: 200px; /* Adjust as needed */
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .descriptionContainer {
+    padding: 10px;
+  }
+  
+  .descriptionContainer h2 {
+    margin-top: 0;
+  }
+  
+  .descriptionContainer a {
+    display: block;
+    margin-top: 10px;
+  }
+  

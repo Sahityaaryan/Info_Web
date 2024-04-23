@@ -1,27 +1,47 @@
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-"use client";
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-import { Carousel } from "flowbite-react";
-import img1 from '../assets/images/img1.jpeg'
-import img2 from '../assets/images/img2.jpeg'
-import img3 from '../assets/images/img3.jpeg'
-import img4 from '../assets/images/img4.jpeg'
+// Import Swiper core and required modules
+import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 
+// Initialize Swiper modules
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 
-export default function Component() {
-  return (
-    <div className="h-auto w-full  sm:h-64 xl:h-80 2xl:h-96 bg-gray-400">
-      <Carousel>
-        <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
-        <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
-        <img src ="https://drive.google.com/file/d/15jeZiubm_06Jc12mEIb4LDLFHyFnllMV/view?usp=drive_link" alt = "..."></img>
-        <img src = {img2} alt = "..."></img>
-        <img src = {img3} alt = "..."></img>
-        <img src = {img4} alt = "..."></img>
-      </Carousel>
-    </div>
-  );
+export default function Carousel({ images }) {
+    return (
+        <Swiper
+            spaceBetween={50}
+            centeredSlides={true}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
+            pagination={{
+                clickable: true,
+            }}
+            navigation={true}
+            className="w-[100%] md-[100%] lg:w-[100%] xl-[100%] 2xl:w-[100%] h-[90%]"
+        >
+            {images.map((image, index) => (
+                <SwiperSlide key={index}>
+                    <div
+                        style={{
+                            backgroundColor: 'white',
+                            backgroundImage: `url(${image})`,
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'center',
+                            margin: 'auto',
+                        }}
+                        className='w-[60%] sm:[w-50%] md:w-[53%] lg:w-[80%] xl:w-[90%] h-[15rem] sm:h-[20rem] lg:h-[20rem] xl:h-[30rem]'
+                    ></div>
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    );
 }
