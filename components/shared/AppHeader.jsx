@@ -22,19 +22,6 @@ function AppHeader() {
 		}
 	}
 
-	// function showHireMeModal() {
-	// 	if (!showModal) {
-	// 		document
-	// 			.getElementsByTagName('html')[0]
-	// 			.classList.add('overflow-y-hidden');
-	// 		setShowModal(true);
-	// 	} else {
-	// 		document
-	// 			.getElementsByTagName('html')[0]
-	// 			.classList.remove('overflow-y-hidden');
-	// 		setShowModal(false);
-	// 	}
-	// }
 
 	return (
 		<motion.nav
@@ -145,7 +132,7 @@ function AppHeader() {
 							Contact
 						</Link>
 					</div>
-					
+
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<button
 							// onClick={showHireMeModal}
@@ -178,6 +165,8 @@ function AppHeader() {
 					>
 						<Link href="/sponsors">Sponsors</Link>
 					</div>
+					
+					<div>
 					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<Link href="/research" aria-label="Contact">
 							Research
@@ -187,8 +176,8 @@ function AppHeader() {
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="About Me"
 					>
-						<Link href="/resources">Resources</Link>
-					</div> */}
+						<Link href="/publications">Publications</Link>
+					</div>*/}
 
 
 					<div
