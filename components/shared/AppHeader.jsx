@@ -127,11 +127,15 @@ function AppHeader() {
 							Research
 						</Link>
 					</div>
+
+					
+
 					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<Link href="/contact" aria-label="Contact">
 							Contact
 						</Link>
 					</div>
+
 
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<button
@@ -185,7 +189,11 @@ function AppHeader() {
 					>
 						<Link href="/resources">Resources</Link>
 					</div>
-
+					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
+						<Link href="/laboratory" aria-label="Laboratory">
+							Laboratory
+						</Link>
+					</div>
 					<div
 						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Team"
@@ -229,6 +237,7 @@ function AppHeader() {
 				) : null}
 				{showModal ? showHireMeModal : null}
 			</div> */}
+			</div>
 		</motion.nav>
 	);
 }
