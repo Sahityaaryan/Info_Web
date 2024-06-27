@@ -1,8 +1,10 @@
+'use client'
+
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { CourseDetail } from './CourseDetail'
 import  teachingCoursesData  from '../../data/teachingcoursesData'
-export default function ()  {
+export default function PostgraduateMore()  {
   const [selectedCourse,setSelectedCourse] = useState(0);
 
   useEffect(()=>{
@@ -29,7 +31,7 @@ export default function ()  {
                 
                 {teachingCoursesData.map((course)=> {
                     
-                    return (<div className='w-auto h-16'><button onClick={()=>currentCourseHandler(course.id)}>{course.name}</button></div>)
+                    return (<div key={course.id} className='w-auto h-16'><button onClick={()=>currentCourseHandler(course.id)}>{course.name}</button></div>)
                 })}
              </div>
              <div className=' h-auto w-0.5 bg-slate-600 '></div>

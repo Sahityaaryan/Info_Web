@@ -189,8 +189,10 @@ function AppHeader() {
 					>
 						<Link href="/resources">Resources</Link>
 					</div>
-					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
-						<Link href="/laboratory" aria-label="Laboratory">
+					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+					aria-label="Laboratory"
+					>
+						<Link href="/laboratory">
 							Laboratory
 						</Link>
 					</div>
@@ -237,7 +239,7 @@ function AppHeader() {
 				) : null}
 				{showModal ? showHireMeModal : null}
 			</div> */}
-			</div>
+			
 		</motion.nav>
 	);
 }
