@@ -24,7 +24,12 @@ function about() {
 				animate={{ opacity: 1, delay: 1 }}
 				exit={{ opacity: 0 }}
 			>
-				<AboutCounter />
+				{/* <AboutCounter 
+				firstTitle = {{desc:"Total Snactioned Projects",value:12}}
+				secondTitle = {{desc:"Ongoing Projects",value:20}}
+				thirdTitle = {{desc:"Total Fund Recieved",value:92}}
+				fourthTitle = {{desc:"Projects Staff",value:77}}
+				/> */}
 			</motion.div>
 
 			<motion.div
@@ -33,7 +38,7 @@ function about() {
 				exit={{ opacity: 0 }}
 				className="container mx-auto"
 			>
-				<AboutClients />
+				{/* <AboutClients /> */}
 			</motion.div>
 		</div>
 	);

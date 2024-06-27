@@ -1,6 +1,6 @@
-import React from 'react'
 
-export const CourseDetail = ({course}) => {
+
+ const CourseDetail = ({course}) => {
   return (
     <div className='flex flex-col gap-5 p-3'>
 
@@ -10,3 +10,5 @@ export const CourseDetail = ({course}) => {
     </div>
   )
 }
+
+export {CourseDetail}
