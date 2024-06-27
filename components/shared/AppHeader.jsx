@@ -230,6 +230,7 @@ function AppHeader() {
 				) : null}
 				{showModal ? showHireMeModal : null}
 			</div> */}
+			</div>
 		</motion.nav>
 	);
 }
