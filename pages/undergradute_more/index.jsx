@@ -1,19 +1,18 @@
+'use client'
+
 import React from 'react'
 import { useState,useEffect } from 'react';
-import teachingCoursesData from '../../data/teachingcoursesData'
+import TeachingCoursesData from '../../data/teachingcoursesData'
 import { CourseDetail } from '../postgradute_more/CourseDetail'
-export default function index  (){
+
+
+export default function UndergraduateMore(){
 
   const [selectedCourse,setSelectedCourse] = useState(0);
 
-  useEffect(()=>{
-    
-     
-  }, [selectedCourse]
-  )
+  useEffect(()=>{}, [selectedCourse])
 
   function currentCourseHandler(id) {
-     
      setSelectedCourse(id);
   }
   return (
@@ -26,13 +25,13 @@ export default function index  (){
      <div  className='w-auto mx-16 flex flex-row'>
         <div className='w-52 flex flex-col gap-2'> 
            
-           {teachingCoursesData.map((course)=> {
+           {TeachingCoursesData.map((course)=> {
                
-               return (<div className='w-auto h-16'><button onClick={()=>currentCourseHandler(course.id)}>{course.name}</button></div>)
+               return (<div key={course.id} className='w-auto h-16'><button onClick={()=>currentCourseHandler(course.id)}>{course.name}</button></div>)
            })}
         </div>
         <div className=' h-auto w-0.5 bg-slate-600 '></div>
-        <div className='ml-6 w-2/3 border-2 h-auto'><CourseDetail course={teachingCoursesData[selectedCourse]} /></div>
+        <div className='ml-6 w-2/3 border-2 h-auto'><CourseDetail course={TeachingCoursesData[selectedCourse]} /></div>
      </div>
 </div>
   )

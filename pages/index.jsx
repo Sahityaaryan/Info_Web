@@ -18,6 +18,7 @@ const images = [
 ];
 
 export default function Home() {
+
   return (
     <>
       <Carousel images={images} /> {/* Integrated Carousel component */}

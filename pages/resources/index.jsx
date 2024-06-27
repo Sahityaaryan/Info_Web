@@ -1,6 +1,5 @@
 
 import Carousel from "../../components/carausel/Carausel"
-import Image from "next/image"
 import awardAndRecognitions from "../../data/awardAndRecognitionData"
 import { certificates } from "../../data/certificates"
 import ShowDataPoints from "../../components/showDataPoints/ShowDataPoints"
