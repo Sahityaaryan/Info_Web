@@ -7,6 +7,9 @@ function contact() {
 	return (
 		<div>
 			<PagesMetaHead title="Contact" />
+			<div className="h-72 bg-cyan-600 flex flex-col align-bottom justify-end p-6">
+          	  <h1 className='text-2xl font-medium'>CONTACT US</h1>
+        	</div>
 
 			<motion.div
 				initial={{ opacity: 0 }}
