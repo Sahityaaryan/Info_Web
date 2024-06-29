@@ -9,8 +9,8 @@ import 'swiper/css/navigation';
 
 
 
-// import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+// import required modulesw
+import {Autoplay , Pagination,Navigation} from 'swiper/modules'
 import { useEffect, useState } from 'react';
 
 export default function Carousel({ src }) {
