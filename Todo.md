@@ -48,3 +48,11 @@ phd candidates
 - fix the style of the header css
 
 - fix the responsiveness
+
+
+
+# Added Effects
+
+1. Navbar must indicate about the currently selected tab
+2. Laboratory page should be a bit lower in position it is touching the navbar
+3. 
