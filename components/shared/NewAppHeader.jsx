@@ -19,7 +19,6 @@ function NewAppHeader() {
 
     const [NavOptions, setNavOptions] = useState([
         {option:"Home" , link:"/"},
-        {option:"Projects" , link:"/projects"},
         {option:"Sponsors" , link:"/sponsors"},
         {option:"Research" , link:"/research"},
         {option:"Publications" , link:"/publications"},
@@ -127,8 +126,8 @@ function NewAppHeader() {
 						</Link>
 					</div>
 					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
-						<Link href="/projects" aria-label="Projects">
-							Projects
+						<Link href="/research" aria-label="Research">
+							Research
 						</Link>
 					</div>
 					{/* <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
@@ -136,11 +135,7 @@ function NewAppHeader() {
 							About Me
 						</Link>
 					</div> */}
-						<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="/research" aria-label="Contact">
-							Research
-						</Link>
-					</div>
+						
 
 					
 
@@ -177,54 +172,6 @@ function NewAppHeader() {
                         </>
                     )
                 })}
-
-                    
-					{/* <div
-						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="Projects"
-					>
-						<Link href="/projects">Projects</Link>
-					</div>
-
-					<div
-						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="Sponsors"
-					>
-						<Link href="/sponsors">Sponsors</Link>
-					</div>
-				
-					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="/research" aria-label="Contact">
-							Research
-						</Link>
-					</div>
-					<div
-						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="About Me"
-					>
-						<Link href="/publications">Publications</Link>
-					</div>
-
-
-					<div
-						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="About Me"
-					>
-						<Link href="/resources">Resources</Link>
-					</div>
-					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-					aria-label="Laboratory"
-					>
-						<Link href="/laboratory">
-							Laboratory
-						</Link>
-					</div>
-					<div
-						className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
-						aria-label="Team"
-					>
-						<Link href="/team">Team</Link>
-					</div> */}
 				</div>
 
 				{/* Header right section buttons */}
