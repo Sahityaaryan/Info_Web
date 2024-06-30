@@ -63,19 +63,6 @@ export const projectData=[
 		ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
 				'The immense strength and flexibility of graphene could revolutionize materials science. It could be used to create stronger, lighter composites and coatings, drastically improving the performance of many products, from aircraft to sports equipment',
-			// Technologies: [
-			// 	{
-			// 		title: 'Tools & Technologies',
-			// 		techs: [
-			// 			'HTML',
-			// 			'CSS',
-			// 			'JavaScript',
-			// 			'Vue.js',
-			// 			'TailwindCSS',
-			// 			'AdobeXD',
-			// 		],
-			// 	},
-			// ],
 			ProjectDetails: [
 				{
 					id: uuidv4(),
@@ -150,19 +137,7 @@ export const projectData=[
 	ObjectivesHeading: 'Objective',
 		ObjectivesDetails:
 			'The immense strength and flexibility of graphene could revolutionize materials science. It could be used to create stronger, lighter composites and coatings, drastically improving the performance of many products, from aircraft to sports equipment',
-		// Technologies: [
-		// 	{
-		// 		title: 'Tools & Technologies',
-		// 		techs: [
-		// 			'HTML',
-		// 			'CSS',
-		// 			'JavaScript',
-		// 			'Vue.js',
-		// 			'TailwindCSS',
-		// 			'AdobeXD',
-		// 		],
-		// 	},
-		// ],
+
 		ProjectDetails: [
 			{
 				id: uuidv4(),
@@ -236,19 +211,7 @@ export const projectData=[
 ObjectivesHeading: 'Objective',
 	ObjectivesDetails:
 		'The immense strength and flexibility of graphene could revolutionize materials science. It could be used to create stronger, lighter composites and coatings, drastically improving the performance of many products, from aircraft to sports equipment',
-	// Technologies: [
-	// 	{
-	// 		title: 'Tools & Technologies',
-	// 		techs: [
-	// 			'HTML',
-	// 			'CSS',
-	// 			'JavaScript',
-	// 			'Vue.js',
-	// 			'TailwindCSS',
-	// 			'AdobeXD',
-	// 		],
-	// 	},
-	// ],
+
 	ProjectDetails: [
 		{
 			id: uuidv4(),
@@ -300,7 +263,7 @@ ObjectivesHeading: 'Objective',
 				img: '/images/Self/robust3.jpg',
 			},
 		],
-		  ProjectInfo: {
+		ProjectInfo: {
 			ClientHeading: 'About Sponser',
 			CompanyInfo: [
 				{
@@ -324,19 +287,7 @@ ObjectivesHeading: 'Objective',
 	ObjectivesHeading: 'Objective',
 		ObjectivesDetails:
 			'The immense strength and flexibility of graphene could revolutionize materials science. It could be used to create stronger, lighter composites and coatings, drastically improving the performance of many products, from aircraft to sports equipment',
-		// Technologies: [
-		// 	{
-		// 		title: 'Tools & Technologies',
-		// 		techs: [
-		// 			'HTML',
-		// 			'CSS',
-		// 			'JavaScript',
-		// 			'Vue.js',
-		// 			'TailwindCSS',
-		// 			'AdobeXD',
-		// 		],
-		// 	},
-		// ],
+		
 		ProjectDetails: [
 			{
 				id: uuidv4(),
@@ -390,24 +341,6 @@ ObjectivesHeading: 'Objective',
 			],
 			  ProjectInfo: {
 				ClientHeading: 'About Sponser',
-				// CompanyInfo: [
-				// 	{
-				// 		id: uuidv4(),
-				// 		title: 'Name',
-				// 		details: 'Department Of Science & Technology',
-				// 	},
-				// 	{
-				// 		id: uuidv4(),
-				// 		title: 'Funding Amount',
-				// 		details: '₹ 57,87,957',
-				// 	},
-				// 	{
-				// 		id: uuidv4(),
-				// 		title: 'Website',
-				// 		details: 'https://dst.gov.in/',
-				// 	},
-					
-				// ],
 
 				Students:[
 					{id:uuidv4(),
@@ -421,19 +354,7 @@ ObjectivesHeading: 'Objective',
 		ObjectivesHeading: 'Objective',
 			ObjectivesDetails:
 				'The immense strength and flexibility of graphene could revolutionize materials science. It could be used to create stronger, lighter composites and coatings, drastically improving the performance of many products, from aircraft to sports equipment',
-			// Technologies: [
-			// 	{
-			// 		title: 'Tools & Technologies',
-			// 		techs: [
-			// 			'HTML',
-			// 			'CSS',
-			// 			'JavaScript',
-			// 			'Vue.js',
-			// 			'TailwindCSS',
-			// 			'AdobeXD',
-			// 		],
-			// 	},
-			// ],
+
 			ProjectDetails: [
 				{
 					id: uuidv4(),
@@ -760,7 +681,7 @@ ObjectivesHeading: 'Objective',
 								{
 									id: uuidv4(),
 									title: 'Investigation of Mechanical and Tribological Behaviour of Plasma Sprayed Alumina (Al2O3) Thermal Barrier coating with and without Bond Coat',
-									img: '/images/Pg/plasma2.jpg',
+									img: '/images/Pg/plasma3.jpg',
 								},
 								{
 									id: uuidv4(),

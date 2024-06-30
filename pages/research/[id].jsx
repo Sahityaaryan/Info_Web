@@ -3,12 +3,12 @@ import Image from "next/image";
 import { FiClock, FiInstagram, FiTag, FiTwitter } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import PagesMetaHead from "../../components/PagesMetaHead";
-import { projectsData } from "../../data/projectsData";
-import { projectData } from "../../data/projectsData";
+import { projectData } from "../../data/researchData";
 import RelatedProjects from "../../components/projects/RelatedProjects";
 
 function ProjectSingle(props) {
-  // console.log(props.project.ProjectInfo)
+
+  
   return (
     <div className="container mx-auto">
       <PagesMetaHead title={props.project.title} />
@@ -44,7 +44,6 @@ function ProjectSingle(props) {
                 className="rounded-xl w-full sm:w-auto h-[25vh]  md:h-[30vh]   cursor-pointer shadow-lg sm:shadow-none"
                 alt={project.title}
                 key={project.id}
-                objectFit="contain"
                 width={100}
                 height={90}
               />
@@ -56,7 +55,8 @@ function ProjectSingle(props) {
       {/* Info */}
       <div className="block sm:flex gap-0 sm:gap-10 mt-14">
         <div className="w-full sm:w-1/3 text-left">
-          {/* Single project client details */}
+
+          {/*  Sponsor Details */}
           <div className="mb-7">
             <p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
               {props.project.ProjectInfo.ClientHeading}
@@ -86,7 +86,9 @@ function ProjectSingle(props) {
               })}
             </ul>
           </div>
-          <div className="mb-7">
+
+          {/* Students Enrolled */}
+          {/* <div className="mb-7">
             <p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
               Students Enrolled
             </p>
@@ -129,9 +131,9 @@ function ProjectSingle(props) {
                 </li>
               </ul>
             )}
-          </div>
+          </div> */}
 
-          {/* Single project objectives */}
+          {/* Research Objectives */}
           <div className="mb-7">
             <p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
               {props.project.ProjectInfo.ObjectivesHeading}
@@ -158,28 +160,10 @@ function ProjectSingle(props) {
             <p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
               {props.project.ProjectInfo.SocialSharingHeading}
             </p>
-            {/* <div className="flex items-center gap-3 mt-5">
-							{props.project.ProjectInfo.SocialSharing.map(
-								(social, index) => {
-									<Link
-										key={index}
-										href={social.url}
-										target="__blank"
-										passHref={true}
-										aria-label="Share Project"
-										className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
-									>
-										<span className="text-lg lg:text-2xl">
-											{social.icon}
-										</span>
-									</Link>;
-								}
-							)}
-						</div> */}
           </div>
         </div>
 
-        {/*  Single project right section details */}
+        {/*  Research right section details */}
         <div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
           <p className="text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
             {/* {props.project.ProjectInfo.ProjectDetailsHeading} */}
@@ -205,6 +189,7 @@ function ProjectSingle(props) {
 }
 
 export async function getServerSideProps({ query }) {
+
   const { id } = query;
   return {
     props: {

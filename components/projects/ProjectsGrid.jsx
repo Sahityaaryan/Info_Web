@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
-import { projectsData } from '../../data/researchData';
 import { projectData } from '../../data/researchData';
 import ProjectsFilter from './ProjectsFilter';
 
