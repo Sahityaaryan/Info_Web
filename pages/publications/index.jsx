@@ -24,7 +24,7 @@ export default function index() {
               {Array.from({ length: 5 }).map((_, index) => (
                 <CarouselItem
                   key={index}
-                  className="basis-1/2 md:basis-1/4 lg:basis-1/4 w-full h-full "
+                  className="basis-1/2 md:basis-1/4 lg:basis-1/4 w-full h-full p-6 "
                 >
                   <div className="w-full h-full">
                     <Card className="h-full w-full">
