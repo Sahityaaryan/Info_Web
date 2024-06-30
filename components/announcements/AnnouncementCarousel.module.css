@@ -1,6 +1,7 @@
 /* styles/AnnouncementCarousel.module.css */
 .carousel-container {
     width: 100%; /* Ensure the container takes up the full width */
+    padding-bottom: 6rem;
   }
   
   .carousel {
