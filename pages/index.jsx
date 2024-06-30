@@ -24,7 +24,6 @@ export default function Home() {
             <Carousel images={images} /> {/* Integrated Carousel component */}
             <div className="container mx-auto">
 
-
     <div className="flex flex-col md:flex-row items-center md:items-stretch mt-6 pt-6">
       <div className="md:w-1/2 md:mr-8 mb-4 md:mb-0">
         <img src="/images/img1.jpeg" alt="Lab Image" className="w-full h-auto" />
@@ -32,7 +31,7 @@ export default function Home() {
       <div className="md:w-1/2">
         <div className="text-center md:text-left">
           <h2 className="text-3xl font-bold mb-4 mt-4 text-red-800">Welcome To <br></br>Advance Composite Manufacturing and Characterisation Centre
-		  </h2>
+		</h2>
           <p className="text-lg">Plasma spray coating lab at the Indian Institute of Technology Patna (IIT Patna) adds a unique dimension to our campus life, fostering innovation, research, and hands-on learning experiences. Here&apos;s a glimpse into this exciting facet of campus life: Cutting-Edge Technology: Our campus boasts state-of-the-art facilities for plasma spraying, a cutting-edge technology used for surface modification and material enhancement.</p>
 
         </div>

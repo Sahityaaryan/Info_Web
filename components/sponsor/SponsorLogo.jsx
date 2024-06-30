@@ -4,7 +4,6 @@ export default function SponsorLogo(props) {
 
     const [img, setImg] = React.useState('https://www.iitp.ac.in/~anup/assets/images/events/5c.png')
 
-    // console.log("props: ",props.data)
     return (
     
     <>
@@ -18,7 +17,6 @@ export default function SponsorLogo(props) {
       
     </div>
     
-    {/* <img src={'https://www.iitp.ac.in/~anup/assets/images/events/5c.png'} alt="Custom" style={{ objectFit:'contain', height: 'auto' }} /> */}
     </>
     )
 }
