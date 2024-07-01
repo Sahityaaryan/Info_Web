@@ -9,7 +9,7 @@ phd candidates
 - work exp
 - Current Administrative Responsibility
 - Books
-- Education Qualifications 
+- Education Qualifications  
 
 ### Home page: 
 
@@ -50,3 +50,4 @@ phd candidates
 14. Sponsor header (Sponsors page) [done]
 15. Fixing the deployment issues [Ashutosh_sir]
 16. Fixing the Responsiveness (Sponsors page) [done]
+17. Ask about (About Me) section [done]
