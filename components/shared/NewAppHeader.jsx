@@ -26,6 +26,7 @@ function NewAppHeader() {
 		{ option: "Laboratory", link: "/laboratory" },
 		{ option: "Team", link: "/team" },
 		{option:"Contact",link: "/contact" },
+		{option:"Teaching",link: "/teaching" },
 	]);
 
 	function toggleMenu() {
