@@ -58,4 +58,11 @@ phd candidates
 1. Navbar must indicate about the currently selected tab [done]
 2. Laboratory page should be a bit lower in position it is touching the navbar
 3. Remove the blue outline on selection of the sponsors
-4. Individiudal research and research navigation == Read more section [Fixing_the_Read_More]
+4. Individiudal research and research navigation == Read more section [done]
+5. Have to make a gallery [done]
+6. Sponsor carausle (Home page)
+7. alumni carausel (Home page)
+8. Facilites carausel (Home page)
+9. NavBar should be sticky (just like tnp's one)
+10. Fix the small screen navbar
+11. Fixing the image blur problem (Research)
