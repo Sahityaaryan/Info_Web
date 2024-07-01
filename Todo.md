@@ -51,3 +51,4 @@ phd candidates
 15. Fixing the deployment issues [Ashutosh_sir]
 16. Fixing the Responsiveness (Sponsors page) [done]
 17. Ask about (About Me) section [done]
+18. Fixing the Navbar's Responsiveness (It should be turn to hamburger menu when becomes less than or around 1024 px in width)

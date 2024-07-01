@@ -3,7 +3,7 @@ import ContactDetails from '../../components/contact/ContactDetails';
 import ContactForm from '../../components/contact/ContactForm';
 import PagesMetaHead from '../../components/PagesMetaHead';
 
-function contact() {
+export default function Contact() {
 	return (
 		<section className="py-2 sm:py-5 mt-1 sm:mt-4">
 			<PagesMetaHead title="Contact" />
@@ -32,4 +32,4 @@ function contact() {
 	);
 }
 
-export default contact;
+

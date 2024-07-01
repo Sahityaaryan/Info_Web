@@ -49,6 +49,9 @@ const socialLinks = [
 export default function Home() {
   return (
     <>
+            <PagesMetaHead title="Home" />
+
+
       <Carousel images={images} /> {/* Integrated Carousel component */}
       <div className="container mx-auto">
 
@@ -67,7 +70,7 @@ export default function Home() {
         </div>
 
 
-        <PagesMetaHead title="Home" />
+
 
         <Conference showMoreConferences={true} />
         <Journals showMoreJournals={true} />
@@ -139,11 +142,11 @@ export default function Home() {
           <div
             className='w-full  md:w-[60%]  p-8 my-auto'
           >
-            Dr. Pandey's academic journey is rooted in his pursuit of excellence and dedication to his field. He has completed his B. Tech in Mechanical Engineering in the year 2007 and Qualified GATE in 2010. He holds a Master's degree (2012) and a Ph.D. (2017) in Mechanical Engineering from DTU (Delhi Technological University), a prestigious institution known for its strong engineering programs. For his M.Tech dissertation and Doctoral research work, he had the privilege of being supervised by two esteemed professors, Prof. Qasim Murtaza and Prof. R S Walia from Delhi Technological University (DTU) Delhi.
+            Dr. Pandey&apos;s academic journey is rooted in his pursuit of excellence and dedication to his field. He has completed his B. Tech in Mechanical Engineering in the year 2007 and Qualified GATE in 2010. He holds a Master&apos;s degree (2012) and a Ph.D. (2017) in Mechanical Engineering from DTU (Delhi Technological University), a prestigious institution known for its strong engineering programs. For his M.Tech dissertation and Doctoral research work, he had the privilege of being supervised by two esteemed professors, Prof. Qasim Murtaza and Prof. R S Walia from Delhi Technological University (DTU) Delhi.
               <br/>
               <br/>
 
-            Currently, Dr. Pandey serves as Training and Placement Officer at NIT Patna, where he guides and supports students in their career development, a position he has held since 2020. His area of research includes Surface Modification, Coating, Tribology, Material Processing; Composite Materials; Metal Matrix Nanocomposites; Nano-Coatings; Wear; Deformation and Corrosion. He has guided more than 25 B. Tech projects, 10 M. Tech dissertations. At present, 5 PhD Students are working under his supervision. Dr. Pandey is also the founder and president of the educational and skill-development NGO "Avhikalpana" and a Trust “Research and Innovation Trust”
+            Currently, Dr. Pandey serves as Training and Placement Officer at NIT Patna, where he guides and supports students in their career development, a position he has held since 2020. His area of research includes Surface Modification, Coating, Tribology, Material Processing; Composite Materials; Metal Matrix Nanocomposites; Nano-Coatings; Wear; Deformation and Corrosion. He has guided more than 25 B. Tech projects, 10 M. Tech dissertations. At present, 5 PhD Students are working under his supervision. Dr. Pandey is also the founder and president of the educational and skill-development NGO &quot;Avhikalpana&quot; and a Trust &quot;Research and Innovation Trust&quot;
 
             <div className="mt-10 sm:mt-15 flex justify-center">
 							<div className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-red-800 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300">
