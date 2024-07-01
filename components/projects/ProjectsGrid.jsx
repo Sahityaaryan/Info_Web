@@ -71,7 +71,7 @@ export default function ProjectsFlex() {
 				</div>
 			</div>
 
-			<div className="">
+			<div className="mx-auto">
 				{searchProject?searchProjectsByTitle.map((project,index)=>{
 					
 							return <ProjectSingle key={index} {...project}/>

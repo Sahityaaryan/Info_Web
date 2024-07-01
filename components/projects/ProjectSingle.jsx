@@ -26,7 +26,7 @@ const ProjectSingle = (props) => {
 				passHref
 			>
 				<div className="flex flex-col md:flex-row m-8 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900">
-			<Image src={props.img} alt={"Research Picture"} width={100} height={100}  className="p-5 w-full md:w-1/2  mb-4 md:mb-0 md:mr-4" />
+			<Image src={props.img} alt={"Research Picture"} width={800} height={800}  className="p-5 w-full md:w-1/2  mb-4 md:mb-0 md:mr-4" />
 			<div className="md:w-3/4 flex flex-col p-3  place-content-center">
 				<h4 className="text-lg font-semibold">{props.title}</h4>
 				<p className='text-lg '>{aboutResearchContent}</p>

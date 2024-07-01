@@ -7,10 +7,6 @@ export default function Gallery() {
 
     const [activeEvent, setActiveEvent] = useState(1);
 
-    // there should be a navbar component which will have a same and consistent design  (bg-red-800) 
-
-    // there should be a show component as well which will show the contents of the gallery
-
     return (
         <>
 

@@ -19,11 +19,6 @@ export default function Sponsors() {
         'padding': '1rem',
     }
 
-    // const getRowStyle = params => {
-    //     if (params.node.rowIndex % 2 === 0) {
-    //         return { background: 'red' };
-    //     }
-    // };
     
     function getRowHeight(params) {
         // Assuming the server sends the row height as part of the row data
@@ -41,14 +36,12 @@ export default function Sponsors() {
         <>
 
             {/* main banner */}
-            <div
-                style={{ width: '100vw', height: '20rem', backgroundColor: 'blue', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
-
-                className="my-12"
-            >
-                <p className="text-white font-bold text-[2rem] text-center tracking-wide">Sponsors</p>
-                {/* Group photo */}
-            </div>
+            <section className="py-2 sm:py-5 mt-1 sm:mt-4">
+                <div className="text-center">
+                    <p className="font-general-medium text-2xl sm:text-4xl mb-1 m-4 p-5 pb-12  text-ternary-dark dark:text-ternary-light">
+                        Sponsors
+                    </p>
+                </div>
 
 
             {/* Actual Grid */}
@@ -73,7 +66,9 @@ export default function Sponsors() {
                         defaultColDef={{ sortable: true, filter: true }}
                     />
                 </div>
-            </div>``
+            </div>
+
+            </section>
         </>
     )
 }
