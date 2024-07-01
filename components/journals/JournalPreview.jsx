@@ -15,9 +15,9 @@ export default function Journals(showMoreJournals){
 			</div>
 
 
-               <ShowDataPoints
-			   data={JournalData}
-			   />
+            <ShowDataPoints
+			data={JournalData}
+			/>
 
 			{showMoreJournals && (
 				<>

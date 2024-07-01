@@ -33,11 +33,10 @@ export default function Team() {
     return (
         <>
             <div
-                style={{ width: '100vw', height: '20rem',backgroundColor:'blue',display:'flex',flexDirection:'column',justifyContent: 'center'}}
-
+                style={{ width: '100vw', height: '20rem', backgroundColor: 'blue', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
                 className="my-12"
             >
-            <p className="text-white font-bold text-[2rem] text-center tracking-wide">Team picture will be here</p>
+                <p className="text-white font-bold text-[2rem] text-center tracking-wide">Team picture will be here</p>
                 {/* Group photo */}
             </div>
 
@@ -53,8 +52,10 @@ export default function Team() {
 
                 <section className="w-full h-full flex flex-col lg:flex-row justify-center items-center ">
                     <div
-                        style={{ backgroundImage: `url(${"/images/certificates/cert1.png"})`,
-                         backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top' }}
+                        style={{
+                            backgroundImage: `url(${"/images/certificates/cert1.png"})`,
+                            backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top'
+                        }}
                         className="bg-red-600 w-full h-[40%] lg:w-[30%] lg:h-[90%] m-4"
                     >
 
@@ -95,8 +96,8 @@ export default function Team() {
 
 
 
-                                        {/* To be removed */}
-{/* 
+            {/* To be removed */}
+            {/* 
             <section>
                 <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                     <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt=""/>
@@ -130,7 +131,7 @@ export default function Team() {
 
             </section>
 
-            
+
 
         </>
     )
