@@ -4,7 +4,8 @@ import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { CourseDetail } from '../../components/teaching/CourseDetail'
 import  postGraduteData  from '../../data/postGraduteData'
-export default function ()  {
+
+export default function PostGraduteMore()  {
   const [selectedCourse,setSelectedCourse] = useState(0);
 
   useEffect(()=>{

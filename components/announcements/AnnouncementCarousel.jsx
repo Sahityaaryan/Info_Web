@@ -1,7 +1,7 @@
 // components/AnnouncementCarousel.js
 import React from "react";
 import styles from "./AnnouncementCarousel.module.css";
-import announcements from "./announcements.json"; // Import the default export
+import announcements from "./announcements.json";
 import {
   Carousel,
   CarouselContent,
@@ -18,6 +18,7 @@ const AnnouncementCarousel = () => {
         {" "}
         Announcements
       </div>
+
       <div className="mx-3 justify-center align-middle px-2 hidden lg:flex">
         <Carousel className="w-4/5 sm:w-5/6 self-center h-full">
           <CarouselContent className="-ml-1">
@@ -110,21 +111,6 @@ const AnnouncementCarousel = () => {
                           <p className="text-lg">{announcement.description}</p>
                           <a href={announcement.link}>Read more</a>
                       </div>
-                      {/* <div key={index} className={styles.announcement}>
-                        <div className={styles.imageContainer}>
-                          <img
-                            src={announcement.image}
-                            alt={announcement.alt}
-                          />
-                        </div>
-                        <div className={styles.descriptionContainer}>
-                          <h2 className="font-semibold text-xl">
-                            {announcement.title}
-                          </h2>
-                          <p className="text-lg">{announcement.description}</p>
-                          <a href={announcement.link}>Read more</a>
-                        </div>
-                      </div> */}
                     </CardContent>
                   </Card>
                 </div>
@@ -134,19 +120,6 @@ const AnnouncementCarousel = () => {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-
-        {/* {announcements.map((announcement, index) => (
-        <div key={index} className={styles.announcement}>
-          <div className={styles.imageContainer}>
-            <img src={announcement.image} alt={announcement.alt} />
-          </div>
-          <div className={styles.descriptionContainer}>
-            <h2 className='font-semibold text-xl'>{announcement.title}</h2>
-            <p className='text-lg'>{announcement.description}</p>
-            <a href={announcement.link}>Read more</a>
-          </div>
-        </div>
-      ))} */}
       </div>
     </div>
   );

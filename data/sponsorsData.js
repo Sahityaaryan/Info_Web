@@ -4,14 +4,14 @@ import SponsorLogo from "../components/sponsor/SponsorLogo";
 
 
 const rowData = [
-    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology ",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "Ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
-    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "Ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
-    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "Ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
-    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology ",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "Ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
-    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "Ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
-    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "Ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
+    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology ",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
+    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
+    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
+    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology ",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
+    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
+    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
 
-    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "Ongoing" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
+    {Projects:"Center of Excellence in 'Wear and Corrosion Resistant Coating Technology",Sponsor:"sponsors", "Funded Amount":"578.0 lakhs", currentStatus: "completed" ,  imageSource:'https://www.iitp.ac.in/~anup/assets/images/events/5c.png' },
 ]
 
 const columnData = [

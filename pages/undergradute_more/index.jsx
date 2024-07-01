@@ -4,7 +4,9 @@ import React from 'react'
 import { useState,useEffect } from 'react';
 import underGraduteData from '../../data/underGraduteData'
 import { CourseDetail } from '../../components/teaching/CourseDetail'
-export default function index  (){
+
+
+export default function UnderGraduteMore(){
 
   const [selectedCourse,setSelectedCourse] = useState(0);
 
