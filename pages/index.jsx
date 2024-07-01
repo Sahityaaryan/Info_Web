@@ -19,6 +19,7 @@ import {
 import { SiGooglescholar, SiOrcid } from "react-icons/si";
 import AboutCounter from '../components/about/AboutCounter';
 import Gallery from '../components/gallery/Gallery';
+import Button from '../components/reusable/Button';
 
 const images = [
   '/images/img1.jpg',
@@ -98,7 +99,7 @@ export default function Home() {
             />
 
             <div className='mt-4  text-center'>
-              <p>
+              <div>
                 <h1 className='font-semibold text-2xl'>Dr. Shailesh Mani Pandey</h1>
                 <h1 className='font-semibold text-xl pt-2'>Assistant Professor</h1>
                 <h1 className='pt-1'>Department of Mechanical Engineering</h1>
@@ -107,8 +108,8 @@ export default function Home() {
                 <h1 className='pt-2'><span className='font-bold'>email: </span> smp.me@nitp.ac.in</h1>
                 <div className='flex flex-col md:flex-row gap-x-4 w-full  gap-y-4'>
 
-                    {/* Social Links */}
-                  <div className="p-7">
+                  {/* Social Links */}
+                  <div className="p-7 mx-auto">
 
                     <ul className="flex gap-4 sm:gap-8">
                       {socialLinks.map((link) => (
@@ -128,7 +129,7 @@ export default function Home() {
                 </div>
 
 
-              </p>
+              </div>
             </div>
 
           </div>
@@ -138,31 +139,41 @@ export default function Home() {
           <div
             className='w-full  md:w-[60%]  p-8 my-auto'
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate mollitia ratione praesentium unde placeat reiciendis excepturi laborum! Vero nisi doloremque distinctio doloribus odit a, facere aliquam debitis consequuntur repudiandae excepturi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius voluptate voluptatibus animi? Placeat, sit esse. Aut ipsam maxime, pariatur vel iusto dolores possimus reprehenderit voluptate ratione debitis eveniet perspiciatis veritatis sequi cumque neque. Laboriosam dolorum quod, maxime in non neque officia? Tenetur tempora voluptates, alias dolore nemo ullam soluta. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, necessitatibus voluptate quam deleniti, iure recusandae adipisci fugit sit cumque aut laborum qui, nemo ea sed suscipit labore asperiores fugiat officia sapiente. Dicta, a. Id iure culpa aspernatur beatae aut temporibus modi, quos aliquam ducimus pariatur, accusantium porro laudantium vel incidunt corrupti, debitis tempora? Tempora, animi accusamus velit voluptatum, ab fugiat, deserunt sunt dignissimos soluta laboriosam dolore iure? Eligendi, possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione mollitia dignissimos deserunt iusto! Blanditiis non, mollitia excepturi tempora, repellat alias magnam nam, maxime modi perferendis vero impedit distinctio. Dolores sed, incidunt suscipit in explicabo hic, a maiores ipsam cupiditate enim facilis ut repudiandae temporibus corporis consequuntur, nemo excepturi nulla blanditiis! Perspiciatis, nulla distinctio voluptate fuga id laborum perferendis dolores alias vitae mollitia asperiores, sint esse laboriosam excepturi veritatis labore.
+            Dr. Pandey's academic journey is rooted in his pursuit of excellence and dedication to his field. He has completed his B. Tech in Mechanical Engineering in the year 2007 and Qualified GATE in 2010. He holds a Master's degree (2012) and a Ph.D. (2017) in Mechanical Engineering from DTU (Delhi Technological University), a prestigious institution known for its strong engineering programs. For his M.Tech dissertation and Doctoral research work, he had the privilege of being supervised by two esteemed professors, Prof. Qasim Murtaza and Prof. R S Walia from Delhi Technological University (DTU) Delhi.
+              <br/>
+              <br/>
+
+            Currently, Dr. Pandey serves as Training and Placement Officer at NIT Patna, where he guides and supports students in their career development, a position he has held since 2020. His area of research includes Surface Modification, Coating, Tribology, Material Processing; Composite Materials; Metal Matrix Nanocomposites; Nano-Coatings; Wear; Deformation and Corrosion. He has guided more than 25 B. Tech projects, 10 M. Tech dissertations. At present, 5 PhD Students are working under his supervision. Dr. Pandey is also the founder and president of the educational and skill-development NGO "Avhikalpana" and a Trust “Research and Innovation Trust”
+
+            <div className="mt-10 sm:mt-15 flex justify-center">
+							<div className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-red-800 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300">
+								<Link href="/about" aria-label="Read More About Team Leader" passHref>
+									<Button title="Know More" />
+								</Link>
+							</div>
+						</div>
           </div>
+
+         
 
         </div>
 
       </div>
 
-        {/* Project Counter */}
+      {/* Project Counter */}
 
-        <div>
-        <AboutCounter 
-				firstTitle = {{desc:"Total Snactioned Projects",value:12}}
-				secondTitle = {{desc:"Ongoing Projects",value:20}}
-				thirdTitle = {{desc:"Total Fund Recieved",value:92}}
-				fourthTitle = {{desc:"Projects Staff",value:77}}
-				/>
-        </div>
+      <div>
+        <AboutCounter
+          firstTitle={{ desc: "Total Snactioned Projects", value: 12 }}
+          secondTitle={{ desc: "Ongoing Projects", value: 20 }}
+          thirdTitle={{ desc: "Total Fund Recieved", value: 92 }}
+          fourthTitle={{ desc: "Projects Staff", value: 77 }}
+        />
+      </div>
 
+      {/* Gallery */}
 
-        {/* Gallery */}
-
-        {/* id based mapping */}
-        {/* should be a reusable component */}
-
-        <Gallery/>
+      <Gallery />
 
     </>
   );
