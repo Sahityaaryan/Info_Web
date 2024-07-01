@@ -66,3 +66,7 @@ phd candidates
 9. NavBar should be sticky (just like tnp's one)
 10. Fix the small screen navbar
 11. Fixing the image blur problem (Research)
+12. Team picture  (Team page)
+13. Restyling header (Contact us) 
+14. Sponsor header (Sponsors page) 
+15. Fixing the deployment issues [important]
