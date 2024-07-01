@@ -147,7 +147,7 @@ function NewAppHeader() {
 						return (
 							<>
 								<div
-									className={` ${ele.option == selected ? "p-4 rounded-md bg-red-800 text-white" : "text-primary-dark"} block text-left text-lg font-medium  dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 transition-all ease-in duration-75 `}
+									className={` ${ele.option == selected ? "p-4 rounded-md bg-red-800 border-red-800 text-white" : "text-primary-dark"}  block text-left text-lg font-medium  dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 transition-all ease-in duration-75 `}
 									aria-label={ele.option}
 								>
 
