@@ -5,7 +5,6 @@ import ProjectsGrid from '../components/projects/ProjectsGrid';
 import Journals from '../components/journals/JournalPreview';
 import AppBanner from '../components/shared/AppBanner';
 import Conference from '../components/conferences/Conference';
-import Carousel from '../components/Carousel';
 import styles from '../components/announcements/AnnouncementCarousel.module.css';
 import AnnouncementCarousel from '../components/announcements/AnnouncementCarousel';
 import Image from 'next/image';
@@ -52,7 +51,16 @@ export default function Home() {
             <PagesMetaHead title="Home" />
 
 
-      <Carousel images={images} /> {/* Integrated Carousel component */}
+            <div
+                style={{ width: '90vw', height: '18rem'}}
+
+                className="my-12 bg-red-800 flex flex-col justify-center mx-auto"
+            >
+            <p className="text-white font-bold text-[2rem] text-center tracking-wide">Video may be posted here</p>
+                {/* Group photo */}
+            </div>
+
+
       <div className="container mx-auto">
 
         <div className="flex flex-col md:flex-row items-center md:items-stretch mt-6 pt-6">

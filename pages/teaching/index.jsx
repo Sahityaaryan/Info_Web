@@ -1,5 +1,4 @@
 import React from 'react'
-import { Carousel } from '../../components/Carousel'
 import ResponsiveCarousel from '../../components/teaching/ResponsiveCarousel'
 import postGraduteData from '../../data/postGraduteData'
 import underGraduteData from '../../data/underGraduteData'
