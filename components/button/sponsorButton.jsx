@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 
 const CustomButtonComponent = (props) => {
-    const [isCompleted, setIsCompleted] = useState(false)
 
-    const handleChange = (e) => {
-       setIsCompleted(!isCompleted)
-    }
+    console.log("props(sponsorButton): ", props.data.currentStatus)
 
     const style = {
         backgroundColor: 'red',
@@ -16,24 +13,53 @@ const CustomButtonComponent = (props) => {
         cursor: 'pointer'
     }
 
-    // useEffect(() => {console.log("color: ",currentColor);}, [currentColor])
 
+    const [selectedValue, setSelectedValue] = useState(props.data.currentStatus);
+    // const options = [
+    //     { value: "ongoing", label: "Ongoing" },
+    //     { value: "completed", label: "Completed" },
+    // ];
 
+    const ongoingClass = "bg-[#A5D6A7] border-1 border-[#A5D6A7]-50 rounded-3xl text-green-500";
+    const completedClass = "bg-[#063970] border-1 border-[#063970]-50 rounded-3xl text-white";
 
-    // console.log("props: ", props)
+    useEffect(() => {
+        console.log("selectedValue: ", selectedValue);
+    }, [selectedValue])
+
     return (
         <>
 
-            {/* <p   className='mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm'>hi brow</p> */}
-       
+            <select
+                value={selectedValue}
+                onChange={(e) => setSelectedValue(e.target.value)}
+                className={selectedValue === "completed" ? completedClass : ongoingClass}
+            >
 
-            <select className={`bg-[#${isCompleted ? "70e000":"e5383b"}] border-1 border-${isCompleted ? "70e000":"e5383b"}-50 rounded-3xl `} onChange={handleChange}>
-                <option className="bg-white" value="on-going" selected>Ongoing</option>
-                <option className="bg-white"  value="completed" >Completed</option>
+                    <option className="bg-white" key={selectedValue} value={selectedValue}>
+                        {selectedValue}
+                    </option>
+
             </select>
+
+            {/* Note: This should not be removed, This is here for future reference when this site has authorization facility */}
+            {/* <select
+                value={selectedValue}
+                onChange={(e) => setSelectedValue(e.target.value)}
+                className={selectedValue === "completed"? completedClass : ongoingClass}
+            >
+                {options.map((option) => (
+                    <option className="bg-white" key={option.value} value={option.value}>
+                        {option.label}
+                    </option>
+                ))}
+            </select> */}
         </>
     );
 };
+
+
+// Note: that how the change the classNames dynamically? 
 
 
 export { CustomButtonComponent }

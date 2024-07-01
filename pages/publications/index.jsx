@@ -13,7 +13,7 @@ import {
 } from "../../components/ui/carousel";
 import { Card, CardContent } from "../../components/ui/card";
 
-export default function index() {
+export default function Publication() {
   return (
     <div>
       <div>

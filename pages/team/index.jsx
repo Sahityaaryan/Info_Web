@@ -8,6 +8,7 @@ import {
     FiYoutube,
 } from 'react-icons/fi';
 import { SiGooglescholar, SiOrcid } from "react-icons/si";
+import Image from "next/image";
 
 export default function Team() {
 
@@ -32,14 +33,12 @@ export default function Team() {
 
     return (
         <>
-            <div
-                style={{ width: '100vw', height: '20rem',backgroundColor:'blue',display:'flex',flexDirection:'column',justifyContent: 'center'}}
-
-                className="my-12"
-            >
-            <p className="text-white font-bold text-[2rem] text-center tracking-wide">Team picture will be here</p>
-                {/* Group photo */}
-            </div>
+            <Image
+            src={"/images/team/img1.jpeg"}
+            width={800}
+            height={800}
+            className="w-[40%] mx-auto my-12"
+            />
 
             <div className="text-center">
                 <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
@@ -53,8 +52,10 @@ export default function Team() {
 
                 <section className="w-full h-full flex flex-col lg:flex-row justify-center items-center ">
                     <div
-                        style={{ backgroundImage: `url(${"/images/certificates/cert1.png"})`,
-                         backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top' }}
+                        style={{
+                            backgroundImage: `url(${"/images/certificates/cert1.png"})`,
+                            backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top'
+                        }}
                         className="bg-red-600 w-full h-[40%] lg:w-[30%] lg:h-[90%] m-4"
                     >
 
@@ -67,7 +68,6 @@ export default function Team() {
                         <p className=" font-semibold text-[1.4rem] sm:text-[1.6rem] lg:text-[1.3rem] text-ternary-dark dark:text-ternary-light">Shailesh M. Pandey</p>
                         <p className="font-medium text-lg sm:text-xl text-ternary-dark dark:text-ternary-light">Associate Professor</p>
                         <p className="pb-1 lg:pb-3 font-normal text-ternary-dark dark:text-ternary-light">Deparment of Mechanical Engineering</p>
-                        {/* <p className="pt-3 font-medium "> Google Scholar: <span className="font-normal" >{"https://scholar.google.co.in/citations?user=NquFNIsAAAAJ&hl=en"}</span></p> */}
                         <p className="text-ternary-dark dark:text-ternary-light font-medium "> Email: <span className="font-normal" >{"smp.me@nitp.ac.in"}</span></p>
                         <p className="text-ternary-dark dark:text-ternary-light font-medium">office: <span className="font-normal" >{"8750111166"}</span></p>
                         <p className="text-ternary-dark dark:text-ternary-light font-medium">Research Areas: <span className="font-normal" >{"Associate Editor, MAPAN (Journal of Metrology Society of India, SCI, Impact factor: 1.0 (2022) Tribology, Coating, Wear, Friction, Surface Modification, Industry 4.0/5.0 Associate Editor, MAPAN (Journal of Metrology Society of India, SCI, Impact factor: 1.0 (2022)"}</span></p>
@@ -94,20 +94,6 @@ export default function Team() {
             </section>
 
 
-
-                                        {/* To be removed */}
-{/* 
-            <section>
-                <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt=""/>
-                        <div class="flex flex-col justify-between p-4 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-                        </div>
-                </a>
-            </section> */}
-
-
             <section className="w-[100vw] m-3 p-4">
 
                 <div className="text-center">
@@ -130,7 +116,7 @@ export default function Team() {
 
             </section>
 
-            
+
 
         </>
     )

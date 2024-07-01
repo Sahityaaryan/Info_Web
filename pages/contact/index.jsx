@@ -3,13 +3,16 @@ import ContactDetails from '../../components/contact/ContactDetails';
 import ContactForm from '../../components/contact/ContactForm';
 import PagesMetaHead from '../../components/PagesMetaHead';
 
-function contact() {
+export default function Contact() {
 	return (
-		<div>
+		<section className="py-2 sm:py-5 mt-1 sm:mt-4">
 			<PagesMetaHead title="Contact" />
-			<div className="h-72 bg-cyan-600 flex flex-col align-bottom justify-end p-6">
-          	  <h1 className='text-2xl font-medium'>CONTACT US</h1>
-        	</div>
+			
+                <div className="text-center">
+                    <p className="font-general-medium text-2xl sm:text-4xl mb-1 m-4 p-5 pb-12  text-ternary-dark dark:text-ternary-light">
+                        Contact
+                    </p>
+                </div>
 
 			<motion.div
 				initial={{ opacity: 0 }}
@@ -25,8 +28,8 @@ function contact() {
 
 				<ContactDetails />
 			</motion.div>
-		</div>
+		</section>
 	);
 }
 
-export default contact;
+

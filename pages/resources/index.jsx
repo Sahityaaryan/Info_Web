@@ -1,23 +1,22 @@
 
-import Carousel from "../../components/carausel/Carausel"
+import Carousel from "../../components/carausel/ImageCarausel"
 import awardAndRecognitions from "../../data/awardAndRecognitionData"
 import { certificates } from "../../data/certificates"
 import ShowDataPoints from "../../components/showDataPoints/ShowDataPoints"
 export default function Resources(){
 
-    // console.log("certificates: ",certificates)
     return(
         <>
-
-
-        {/* certificate carousel */}
+        <section
+        className="flex flex-col justify-center"
+        >
+            {/* certificate carousel */}
         <div className="my-20">
         <Carousel src={certificates} />
         </div>
 
             {/* Award and Achievements */}
 
-           <>
 
            <section className="py-15 sm:py-20 mt-1 sm:mt-4">
 				<div className="text-center">
@@ -32,10 +31,7 @@ export default function Resources(){
 
 				
 			</section>
-           </>
-
-
-            {/* Events carousel*/}
+        </section>
         
         </>
     )
