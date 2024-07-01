@@ -7,7 +7,6 @@ import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
 // import logoLight from '../../public/images/favicon.ico';
 import logoDark from '../../public/icon.svg';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
-import logo from '../../assets/images/logo.png';
 
 function AppHeader() {
 	const [showMenu, setShowMenu] = useState(false);
@@ -38,7 +37,7 @@ function AppHeader() {
 						<Link href="/">
 							{activeTheme === 'dark' ? (
 								<Image
-									src={logo}
+									src={'/images/team/logo.png'}
 									className="w-22 cursor-pointer"
 									alt="Dark Logo"
 									width={100}

@@ -8,24 +8,25 @@ import { FiSun, FiMoon, FiX, FiMenu } from 'react-icons/fi';
 // import logoLight from '../../public/images/favicon.ico';
 import logoDark from '../../public/icon.svg';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
-import logo from '../../assets/images/logo.png';
+
 
 function NewAppHeader() {
 	const [showMenu, setShowMenu] = useState(false);
 	// const [showModal, setShowModal] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
 
-    const [selected, setSelected] = useState("Home")
+	const [selected, setSelected] = useState("Home")
 
-    const [NavOptions, setNavOptions] = useState([
-        {option:"Home" , link:"/"},
-        {option:"Sponsors" , link:"/sponsors"},
-        {option:"Research" , link:"/research"},
-        {option:"Publications" , link:"/publications"},
-        {option:"Resources" , link:"/resources"},
-        {option:"Laboratory" , link:"/laboratory"},
-        {option:"Team" , link:"/team"}
-    ]);
+	const [NavOptions, setNavOptions] = useState([
+		{ option: "Home", link: "/" },
+		{ option: "Sponsors", link: "/sponsors" },
+		{ option: "Research", link: "/research" },
+		{ option: "Publications", link: "/publications" },
+		{ option: "Resources", link: "/resources" },
+		{ option: "Laboratory", link: "/laboratory" },
+		{ option: "Team", link: "/team" },
+		{option:"Contact",link: "/contact" },
+	]);
 
 	function toggleMenu() {
 		if (!showMenu) {
@@ -40,34 +41,34 @@ function NewAppHeader() {
 		<motion.nav
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
-			id="nav"	
+			id="nav"
 			className="sm:container sm:mx-auto"
 		>
 			{/* Header */}
-			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
+			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between rounded-md  sm:items-center py-6">
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
 						<Link href="/">
 							{activeTheme === 'dark' ? (
 								<Image
-									src={logo}
+									src={'/images/team/logo.png'}
 									className="w-22 cursor-pointer"
 									alt="Dark Logo"
 									width={100}
 									height={20}
 								/>
-								
+
 							) : (
 								<Image
-									src={logo}
+									src={'/images/team/logo.png'}
 									className="w-22 cursor-pointer"
 									alt="Dark Logo"
 									width={100}
 									height={20}
 								/>
 							)}
-							
+
 						</Link>
 					</div>
 
@@ -115,42 +116,25 @@ function NewAppHeader() {
 							: 'hidden'
 					}
 				>
-					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
-						<Link href="/" aria-label="Home">
-							Home
-						</Link>
-					</div>
-					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
-						<Link href="/sponsors" aria-label="Sponsors">
-							Sponsors
-						</Link>
-					</div>
-					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2">
-						<Link href="/research" aria-label="Research">
-							Research
-						</Link>
-					</div>
-					{/* <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="/about" aria-label="About Me">
-							About Me
-						</Link>
-					</div> */}
-						
 
-					
+					{NavOptions.map((ele) => {
 
-					<div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<Link href="/contact" aria-label="Contact">
-							Contact
-						</Link>
-					</div>
+						return (
+							<>
+							 {/* */}
+								<div className={` ${ele.option == selected ? "p-3 rounded-md bg-red-800 text-white" : "text-primary-dark"} block text-left text-lg dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2`}>
+									<Link href={ele.link} onClick={() => { setSelected(ele.option) }}>{ele.option}</Link>
+								</div>
+							</>
+						)
+					})}
+
 
 
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<button
-							// onClick={showHireMeModal}
-							className="font-general-medium sm:hidden block text-left text-md bg-red-800 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
-							aria-label="Hire Me Button"
+							className="font-general-medium sm:hidden block text-left  text-md bg-red-800 hover:bg-indigo-600 text-white shadow-sm rounded-md px-4 py-2 mt-2 duration-300 w-28"
+							aria-label="About Me"
 						>
 							About Me
 						</button>
@@ -159,19 +143,19 @@ function NewAppHeader() {
 
 				{/* Header links large screen */}
 				<div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
-				{NavOptions.map((ele)=>{
-                    return (
-                        <>
-                        <div
-                        className={` ${ele.option == selected ? "p-4 rounded-md bg-red-800 text-white":"text-primary-dark"} block text-left text-lg font-medium  dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 transition-all ease-in duration-75 `}
-						aria-label={ele.option}
-					>
+					{NavOptions.map((ele) => {
+						return (
+							<>
+								<div
+									className={` ${ele.option == selected ? "p-4 rounded-md bg-red-800 text-white" : "text-primary-dark"} block text-left text-lg font-medium  dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 transition-all ease-in duration-75 `}
+									aria-label={ele.option}
+								>
 
-						<Link href={ele.link} onClick={()=>{setSelected(ele.option)}}>{ele.option}</Link>
-					</div>
-                        </>
-                    )
-                })}
+									<Link href={ele.link} onClick={() => { setSelected(ele.option) }}>{ele.option}</Link>
+								</div>
+							</>
+						)
+					})}
 				</div>
 
 				{/* Header right section buttons */}
@@ -200,15 +184,6 @@ function NewAppHeader() {
 					</div>
 				</div>
 			</div>
-			{/* <div>
-				{showModal ? (
-					<HireMeModal
-						onClose={showHireMeModal}
-						onRequest={showHireMeModal}
-					/>
-				) : null}
-				{showModal ? showHireMeModal : null}
-			</div> */}
 			
 		</motion.nav>
 	);
