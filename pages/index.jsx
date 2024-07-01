@@ -8,6 +8,7 @@ import Conference from "../components/conferences/Conference";
 import Carousel from "../components/Carousel"; // corrected import path
 import styles from "../components/announcements/AnnouncementCarousel.module.css";
 import AnnouncementCarousel from "../components/announcements/AnnouncementCarousel";
+import AlumniSlider from "../components/profileSlider/AlumniSlider";
 
 const images = [
   "/images/img1.jpg",
@@ -115,6 +116,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <AlumniSlider/>
     </>
   );
 }
