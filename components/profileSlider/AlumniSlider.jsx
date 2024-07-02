@@ -1,32 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules'; 
+import React from 'react';
+import Slider from 'react-slick';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import slideData from '../../data/alumniData';
 
 const AlumniSlider = () => {
+  const settings = {
+    dots: false, 
+    infinite: true, 
+    speed: 500, 
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500, 
+    centerMode: true,
+    centerPadding: '30px', 
+  };
 
   return (
     <div className="alumni-slider relative h-[550px] w-full overflow-hidden rounded-lg bg-red-800">
       <h2 className="text-3xl font-bold text-white text-center pt-8 mb-4">
         Our Students And Alumni
       </h2>
-      <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          
-          navigation={false}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
-        >
+
+      <Slider {...settings}>
         {slideData.map((alumnus) => (
-          <SwiperSlide key={alumnus.index}>
+          <div key={alumnus.index}>
             <div className="slide w-full h-full flex flex-col items-center justify-center">
               <img
                 src={alumnus.image}
@@ -43,9 +44,9 @@ const AlumniSlider = () => {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </Slider>
     </div>
   );
 };
