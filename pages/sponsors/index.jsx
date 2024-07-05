@@ -6,6 +6,7 @@ import "ag-grid-community/styles/ag-theme-quartz.css"; // Optional Theme applied
 import { rowData, columnData } from '../../data/sponsorsData';
 
 import { useState } from 'react';
+import MyAgGridTable from '../../components/sponsor/MyAgGridTable';
 
 export default function Sponsors() {
     const CustomButtonComponent = (props) => {
@@ -36,7 +37,7 @@ export default function Sponsors() {
         <>
 
             {/* main banner */}
-            <section className="py-2 sm:py-5 mt-1 sm:mt-4">
+            <section className="py-2 sm:py-5 mt-1 sm:mt-4 flex flex-col items-center ">
                 <div className="text-center">
                     <p className="font-general-medium text-2xl sm:text-4xl mb-1 m-4 p-5 pb-12  text-ternary-dark dark:text-ternary-light">
                         Sponsors
@@ -46,27 +47,7 @@ export default function Sponsors() {
 
             {/* Actual Grid */}
 
-            <div>
-
-                <div
-                    className="ag-theme-quartz, w-[90vw] md-[99vw] xl:w-[78rem] mx-auto border-4 rounded-2xl h-[43rem]" // applying the grid theme
-                     // the grid will fill the size of the parent container
-                >   
-                    <AgGridReact
-                        autoSizeStrategy={autoSizeStrategy}
-                        rowData={rowData}
-                        columnDefs={columnData}
-                        domLayout='normal'
-                        rowHeight={80}
-                        rowStyle={RowStyle}
-                        getRowHeight={getRowHeight}
-                        rowSelection='multiple'
-                        headerClass="my-header-class"
-                        className='w-full'
-                        defaultColDef={{ sortable: true, filter: true }}
-                    />
-                </div>
-            </div>
+            <div className='w-full md:w-2/3' ><MyAgGridTable rowData={rowData} columnData={columnData} /></div>
 
             </section>
         </>

@@ -1,11 +1,13 @@
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { galleryData, galleryIdArray } from '../../data/galleryData';
 import Image from 'next/image';
 
 export default function Gallery() {
 
     const [activeEvent, setActiveEvent] = useState(1);
+
+    
 
     return (
         <>
@@ -18,15 +20,13 @@ export default function Gallery() {
                 </div>
 
                 {/* Gallery Navbar */}
-                <div
-                    className='font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none'
-                >
+                <div className='font-general-medium m-0 sm:ml-4 mt-5 flex p-5 gap-5  justify-center items-center shadow-lg sm:shadow-none '>
                     {galleryData.map((ele) => {
 
                         return (
                             <>
                                 <button
-                                    className={`${activeEvent == ele.id ? "p-4 rounded-md bg-red-800 text-white" : "text-primary-dark"} block text-left text-lg font-medium  dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 transition-all ease-in duration-75`}
+                                    className={`${activeEvent == ele.id ? "text-white p-4 rounded-[0.375rem] bg-red-800 ": "text-black"}  p-4 text-lg font-medium  dark:text-ternary-light    sm:mx-4 mb-2 sm:py-2 transition-all ease-in duration-75`}
                                     onClick={() => setActiveEvent(ele.id)}
                                 >
                                     {ele.title}
@@ -36,9 +36,7 @@ export default function Gallery() {
                     })}
                 </div>
 
-                {/* Gallery Pictures */}
-
-               
+                {/* Gallery Pictures */}               
 
               <div>
               <div className='flex flex-wrap p-5 w-3/4 mx-auto'>
